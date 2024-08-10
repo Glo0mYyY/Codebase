@@ -4,7 +4,29 @@
     <meta charset="UTF-8" />
     <title>Lebenslauf</title>
     <!-- Include Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .skill {
+        margin-bottom: 10px;
+      }
+      .skill-label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+      }
+      .skill-bar {
+        background-color: #e0e0e0;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      .skill-level {
+        height: 20px;
+        background-color: #007bff;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -83,6 +105,9 @@
         </tr>
       </table>
 
+      <h2>Fähigkeiten</h2>
+      <div id="skills-container"></div>
+
       <h2>Freizeit</h2>
       <table class="table">
         <tr>
@@ -94,5 +119,7 @@
 
     <!-- Include Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include Skills JS -->
+    <script src="CV.js"></script>
   </body>
 </html>
