@@ -64,7 +64,7 @@
           // Collect form data
           var name = $("#name").val();
           var email = $("#email").val();
-          var message = JSON.stringify($("#contactForm").serializeArray());
+          var message = $("#message").val();
 
           if (name === "" || email === "" || message === "") {
             // Display an error message if any of the required fields are empty
@@ -79,6 +79,22 @@
             mail: email, // "mail" key corresponds to {{mail}} in your template
             message: message,
           };
+
+          // Save form data to the server-side .json file
+          fetch("http://37.35.113.149:80/submit", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              console.log("Form data saved on server:", data);
+            })
+            .catch((error) => {
+              console.error("Error saving data on server:", error);
+            });
 
           // Prepare the data for the EmailJS API request
           var data = {
