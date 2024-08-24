@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="CV NJ" content="Lebenslauf - Jan Nie" />
     <title>Lebenslauf</title>
     <!-- Include Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      async
     />
     <style>
       .skill {
@@ -31,6 +33,10 @@
         height: auto;
         border-radius: 10px;
         margin-bottom: 15px;
+      }
+      .btn-custom {
+        background-color: #0056b3; /* Darker blue for better contrast */
+        color: #ffffff; /* White text for better contrast */
       }
     </style>
   </head>
@@ -145,9 +151,9 @@
             <td>Superstrasse 404, 4500 Solothurn</td>
           </tr>
         </table>
-        <h5>Kontaktieren Sie mich hier:</h5>
+        <h3>Kontaktieren Sie mich hier:</h3>
         <button
-          class="btn btn-primary"
+          class="btn btn-custom"
           onclick="window.location.href='contactForm.html'"
         >
           Kontaktformular
