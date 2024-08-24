@@ -2,7 +2,7 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lebenslauf</title>
     <!-- Include Bootstrap CSS -->
     <link
@@ -15,7 +15,6 @@
       }
       .skill-label {
         font-weight: bold;
-        display: block;
         margin-bottom: 5px;
       }
       .skill-bar {
@@ -27,40 +26,52 @@
         height: 20px;
         background-color: #007bff;
       }
+      .profile-img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <h1>Lebenslauf</h1>
 
-      <h2>Persönliche Daten</h2>
-      <table class="table">
-        <tr>
-          <td>Name:</td>
-          <td>Nie</td>
-        </tr>
-        <tr>
-          <td>Vorname:</td>
-          <td>Jan</td>
-        </tr>
-        <tr>
-          <td>Geburtsdatum:</td>
-          <td>20. Juli 404</td>
-        </tr>
-        <tr>
-          <td>Geburtsort:</td>
-          <td>Solothurn</td>
-        </tr>
-        <tr>
-          <td>Zivilstand:</td>
-          <td>Ledig</td>
-        </tr>
-        <tr>
-          <td>Nationalität:</td>
-          <td>Schweiz</td>
-        </tr>
-      </table>
-      <img src="Jan Nie.jpg" alt="Jan Nie" width="100" />
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Persönliche Daten</h2>
+          <table class="table">
+            <tr>
+              <td>Name:</td>
+              <td>Nie</td>
+            </tr>
+            <tr>
+              <td>Vorname:</td>
+              <td>Jan</td>
+            </tr>
+            <tr>
+              <td>Geburtsdatum:</td>
+              <td>20. Juli 404</td>
+            </tr>
+            <tr>
+              <td>Geburtsort:</td>
+              <td>Solothurn</td>
+            </tr>
+            <tr>
+              <td>Zivilstand:</td>
+              <td>Ledig</td>
+            </tr>
+            <tr>
+              <td>Nationalität:</td>
+              <td>Schweiz</td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="Jan Nie.webp" alt="Jan Nie" class="profile-img" />
+        </div>
+      </div>
 
       <h2>Schulische Bildung</h2>
       <table class="table">
