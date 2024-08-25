@@ -1,11 +1,11 @@
 JSON Responses:
-http://37.35.113.149/responses.json
+https://cv.gloomy.ch/responses.json
 
 Contact Form:
-http://37.35.113.149/contactForm.html
+https://cv.gloomy.ch/contactForm.html
 
 CV:
-http://37.35.113.149
+https://cv.gloomy.ch
 
 Copy Files to RPI5:
 scp -r 'C:\Users\jan\OneDrive - HFTM\02_Fachstudium\IN214 - Grundlagen Web-Programmierung\Codebase\CV\' pi@192.168.2.2:~/my_website
