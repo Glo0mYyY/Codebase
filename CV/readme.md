@@ -1,6 +1,3 @@
-JSON Responses:
-https://cv.gloomy.ch/responses.json
-
 Contact Form:
 https://cv.gloomy.ch/contactForm.html
 
